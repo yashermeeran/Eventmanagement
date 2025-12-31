@@ -96,12 +96,13 @@ export default function Contact() {
         </div>
       )}
 
-      {/* ================= FOOTER ================= */}
-      <footer className="site-footer">
+     <footer className="site-footer">
         <div className="footer-container">
+
 
           <div className="footer-col">
             <img src="./logo.png" alt="Safa Events" className="footer-logo" />
+
             <div className="footer-social">
               <i className="fa-brands fa-instagram"></i>
               <i className="fa-brands fa-whatsapp"></i>
@@ -124,17 +125,26 @@ export default function Contact() {
             <h3>Quick Links</h3>
             <ul>
               <li><a href="/home">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/Services">Services</a></li>
+              <li><a href="/Contact">Contact</a></li>
             </ul>
           </div>
 
           <div className="footer-col">
             <h3>Get In Touch</h3>
-            <p><i className="fa-solid fa-phone"></i> +91 81483 00181</p>
-            <p><i className="fa-solid fa-envelope"></i> yasher0304@gmail.com</p>
+
+            <p>
+              <i className="fa-solid fa-phone"></i>
+              +91 81483 00181
+            </p>
+
+            <p>
+              <i className="fa-solid fa-envelope"></i>
+              yasher0304@gmail.com
+            </p>
           </div>
+
         </div>
 
         <div className="footer-bottom">

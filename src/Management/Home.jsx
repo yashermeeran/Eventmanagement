@@ -113,9 +113,9 @@ export default function Home() {
             <h3>Quick Links</h3>
             <ul>
               <li><a href="/home">Home</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/Services">Services</a></li>
+              <li><a href="/Contact">Contact</a></li>
             </ul>
           </div>
 
