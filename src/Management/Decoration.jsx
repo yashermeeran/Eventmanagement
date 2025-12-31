@@ -63,7 +63,7 @@ export default function Decoration() {
               Let's Create Magic Together – Partner with Us for Unforgettable Events!
             </h3>
 
-            <a href="/contact" className="custom-btn">
+            <a href="/Contact" className="custom-btn">
               Connect Now
             </a>
           </div>
