@@ -1,120 +1,190 @@
-.about-hero {
-  position: relative;
-  width: 100%;
-  height: 420px;
-  overflow: hidden;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-.about-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.about-hero{
+  position:relative;
+  width:100%;
+  height:420px;
+  overflow:hidden;
 }
 
-.about-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+.about-img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
 }
 
-.about-content {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.45);
 }
 
-.about-content h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 56px;
-  color: #fff;
-  font-weight: 700;
-  letter-spacing: 1px;
+.about-content{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
 }
 
-.secondabout {
-  padding: 120px 8%;
-  background: #fff;
+.about-content h1{
+  font-family:'Playfair Display',serif;
+  font-size:56px;
+  color:#fff;
+  font-weight:700;
+  letter-spacing:1px;
 }
 
-.about-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: 70px;
-  align-items: stretch;
+.secondabout{
+  padding:120px 8%;
+  background:#fff;
 }
 
-
-.about-images {
-  display: grid;
-  gap: 20px;
+.about-wrapper{
+  display:grid;
+  grid-template-columns:1fr 1.1fr;
+  gap:70px;
+  align-items:center;
 }
 
-.about-images img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 18px;
-  
+.about-images{
+  display:grid;
+  gap:20px;
 }
 
-.about-text {
-  font-family: 'Playfair Display', serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.about-images img{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  border-radius:18px;
 }
 
-.about-text h6 {
-  color: #d4a24c;
-  font-size: 15px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
+.about-text{
+  font-family:'Playfair Display',serif;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
-.about-text h2 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 120px;
+.about-text h6{
+  color:#d4a24c;
+  font-size:15px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  margin-bottom:25px;
 }
 
-.about-text p {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.9;
-  margin-bottom: 11px;
+.about-text h2{
+  font-size:40px;
+  font-weight:700;
+  color:#111;
+  margin-bottom:30px;
 }
 
-.about-stats {
-  padding: 80px 8%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  background: #fff;
+.about-text p{
+  font-size:16px;
+  color:#555;
+  line-height:1.9;
+  margin-bottom:12px;
 }
 
-.stats-box {
-  height: 100px;
-  border: 1px solid #222;
-  padding: 40px 20px;
-  text-align: center;
-  font-family: 'Playfair Display', serif;
+.about-stats{
+  padding:80px 8%;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:30px;
+  background:#fff;
 }
 
-.stats-box h2 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #111;
-  margin-top: -30px;
+.stats-box{
+  border:1px solid #222;
+  padding:30px 15px;
+  text-align:center;
+  font-family:'Playfair Display',serif;
 }
 
-.stats-box p {
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #555;
+.stats-box h2{
+  font-size:42px;
+  font-weight:700;
+  margin-bottom:10px;
+  color:#111;
+}
+
+.stats-box p{
+  font-size:14px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:#555;
+}
+
+@media(max-width:992px){
+  .about-content h1{
+    font-size:42px;
+  }
+
+  .secondabout{
+    padding:100px 6%;
+  }
+
+  .about-wrapper{
+    grid-template-columns:1fr;
+    gap:50px;
+    text-align:center;
+  }
+
+  .about-images img{
+    height:320px;
+  }
+
+  .about-text h2{
+    font-size:34px;
+  }
+
+  .about-stats{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:576px){
+  .about-hero{
+    height:300px;
+  }
+
+  .about-content h1{
+    font-size:32px;
+  }
+
+  .secondabout{
+    padding:80px 20px;
+  }
+
+  .about-images img{
+    height:220px;
+  }
+
+  .about-text h6{
+    font-size:13px;
+  }
+
+  .about-text h2{
+    font-size:26px;
+  }
+
+  .about-text p{
+    font-size:15px;
+  }
+
+  .about-stats{
+    grid-template-columns:1fr;
+    padding:60px 20px;
+  }
+
+  .stats-box h2{
+    font-size:34px;
+  }
 }
