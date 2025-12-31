@@ -1,7 +1,16 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= HERO ================= */
 .hero {
   position: relative;
   width: 100%;
-  height: 750px;
+  height: 100vh;
+  min-height: 520px;
 }
 
 .img {
@@ -12,11 +21,12 @@
 
 .overlay {
   position: absolute;
+  bottom: 40px;
   left: 50%;
-  top: 85%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 70%;
-  height: 340px;
+  max-width: 900px;
+  height: 300px;
   background: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
@@ -24,29 +34,28 @@
 
 .content {
   position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  width: 100%;
 }
 
 .content h6 {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   font-size: 34px;
-  margin-top: 500px;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .content h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 64px;
   color: #111;
+  line-height: 1.2;
 }
 
 /* ================= ABOUT ================= */
-
 .about {
   padding: 140px 80px;
   display: flex;
@@ -69,20 +78,19 @@
 }
 
 .secondpara {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .secondpara h6 {
   color: #d4a24c;
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .secondpara h2 {
-  font-size: 20px;
+  font-size: 28px;
   margin: 20px 0;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: black;
+  color: #000;
 }
 
 .secondpara h5 {
@@ -90,16 +98,16 @@
   padding-left: 14px;
   margin-bottom: 20px;
   font-style: italic;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .secondpara h4 {
   color: #555;
   line-height: 1.8;
-  font-size:20px;
+  font-size: 17px;
 }
 
-
+/* ================= FEATURES ================= */
 .features-section {
   background: #fff4e8;
   padding: 90px 8%;
@@ -110,7 +118,7 @@
 
 .feature-card {
   flex: 1;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 .feature-icon {
@@ -124,7 +132,7 @@
   justify-content: center;
   font-size: 30px;
   color: #d4a24c;
-  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
 }
 
 .feature-card h3 {
@@ -138,12 +146,11 @@
   color: #555;
 }
 
-
-
+/* ================= FOOTER ================= */
 .site-footer {
   background: #fff;
   border-top: 1px solid #e5e5e5;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   margin-top: 80px;
 }
 
@@ -220,4 +227,84 @@
   font-size: 14px;
   color: #777;
   border-top: 1px solid #eee;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .overlay {
+    width: 85%;
+    height: 260px;
+  }
+
+  .content h1 {
+    font-size: 46px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 100px 40px;
+    text-align: center;
+  }
+
+  .Second {
+    width: 100%;
+    height: 300px;
+  }
+
+  .features-section {
+    flex-wrap: wrap;
+  }
+
+  .feature-card {
+    flex: 1 1 45%;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+  .overlay {
+    width: 92%;
+    height: 230px;
+    bottom: 25px;
+  }
+
+  .content {
+    bottom: 70px;
+  }
+
+  .content h6 {
+    font-size: 22px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .about {
+    padding: 80px 20px;
+  }
+
+  .Second {
+    height: 220px;
+  }
+
+  .features-section {
+    flex-direction: column;
+    padding: 70px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .site-footer p {
+    justify-content: center;
+  }
 }
