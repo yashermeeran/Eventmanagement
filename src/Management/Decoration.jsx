@@ -1,5 +1,6 @@
 import React from "react";
 import "./Decoration.css";
+import { Link } from "react-router-dom";
 
 export default function Decoration() {
   return (
@@ -63,7 +64,9 @@ export default function Decoration() {
               Let's Create Magic Together – Partner with Us for Unforgettable Events!
             </h3>
 
-             <button><a href="/Contact" className="custom-btn">Connect Now</a></button>
+            <Link to="/Contact" className="custom-btn">
+              Connect Now
+            </Link>
           </div>
         </div>
 
